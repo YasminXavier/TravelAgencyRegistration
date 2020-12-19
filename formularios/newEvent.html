@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="../css/fundo.css">
+        <title> Novo Evento </title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="../css/logo/Longo.png" >
+            <a href="../Login.html"><button disabled id="logout" > Sair </button></a>  <!–- alterar a cor -->
+        </header>
+
+        <div id="telas">
+            <nav style="padding: 15px; margin: 15px;">
+                <form id="formularioV">
+                    <p>
+                        <label class="formVig" > Nome: </label>
+                        <input type="text" id="nome" class="campo" style="width: 87%;">
+                    </p>
+                    <p>
+                        <label class="formVig" > Início: </label>
+                        <input type="datetime-local" id="emiss" class="campo" style="width: 200px;" data-min-date="today" >
+                        <label class="formVig" > Final: </label>
+                        <input type="datetime-local" id="emiss" class="campo" style="width: 200px;" data-min-date="today" >
+                        <input type="checkbox" value="" id="checkbox-1" style="margin-left: 50px;">
+                        <label for="checkbox-1">Dia Todo</label>
+                        
+                    </p>
+                    <p>
+                        <label class="formVig" > Local: </label>
+                        <input type="text" id="nome" class="campo" style="width: 87%;">
+                    </p>
+                    <p>
+                        <textarea rows="10" style="margin-top: 15px; margin-left: 30px; width: 91%;"></textarea>
+                    </p>
+                    <p>
+                        <a href=""><button disabled class="vigFor" type="button" style="margin-left: 30px;"> Alterar </button></a><!–- alterar a cor -->
+                        <a href=""><button disabled class="vigFor" type="button"  > Excluir</button></a><!–- alterar a cor -->
+                        <a href=""><button class="vigFor" type="button"  > Salvar</button></a>
+                        <a href=""><button class="vigFor" type="reset"  > Cancelar</button></a>
+                        <a href="../Calendario.html"><button  class="vigFor" type="button" style="margin-right: 0px;" > Voltar</button></a> <!–- alterar a cor -->
+                    </p>
+                </form>
+            </nav>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="../css/fundo.css">
+        <title> Viagens </title>
+        <meta charset="UTF-8"/>
+        <script LANGUAGE="JavaScript"> 
+                function calcula(campo) { 
+                    k = window.event.keyCode; if (k == 9) {  
+                        var com = document.getElementById('com').value;
+                        var val = document.getElementById('val').value;
+                        document.getElementById('valReb').innerHTML = val * (com/100); 
+                         window.event.keyCode = 0; }} 
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="../css/logo/Longo.png" >
+            <a href="../Login.html"><button disabled id="logout" > Sair </button></a>  <!–- alterar a cor -->
+        </header>
+
+        <div id="telas">
+            <nav style="padding: 15px; margin: 15px;">
+                <form id="formularioV">
+                    <p>
+                        <label class="formVig"> CPF: </label>
+                        <input name="cpf" type="text" class="campo">
+                        <label class="formVig" > Nome: </label>
+                        <input type="text" id="nome" class="campo" style="width: 712px;">
+                    </p>
+                    <p>
+                        <label class="formVig"> Destino: </label>
+                        <input type="text" class="campo" size="50px">
+                        <a href="./cadHotel.html"><button class="vig" type="button"> Hotel</button></a>
+                        <a href="./cadOperadora.html"><button class="vig" type="button"> Operadora</button></a>
+                        <a href="./cadTransp.html"><button class="vig" type="button"> Transporte</button></a>
+                        <a href="./newEvent.html"><button class="vig" type="button" style=" width: 150px;"> Adicionar ao Calendário </button></a>
+                    </p>
+                    <p>
+                        <label class="formVig"> Partida: </label>
+                        <input type="date" class="campo" style="height: 25px;" data-min-date="today">
+                        <label class="formVig" style="margin-left: 55px; height: 25px;" data-min-date="today"> Retorno: </label>
+                        <input type="date" class="campo">
+                        <select class="seletor">
+                            <option value=""> Tipo de Viagem </option>
+                            <option value=""> Intercâmbio </option>
+                            <option value=""> Negócios </option>
+                            <option value=""> Turismo </option>
+                        </select>
+                        <label class="formVig"style="margin-left: 98px; padding: 2px;"> Passageiros: </label>
+                        <input type="number" class="campo" style="width: 30px;" >
+                    </p>
+                    <p>
+                        <select class="seletor" style="margin-left: 30px;">
+                            <option value=""> Forma de Pagamento </option>
+                            <option value=""> Cartão de Crédito </option>
+                            <option value=""> Débito em Conta </option>
+                            <option value=""> Carnê </option>
+                        </select>
+                        <label class="formVig"> Parcelas: </label>
+                        <input type="number" class="campo" style="width: 30px;" >
+                        <label class="formVig" style="margin-left: 86px;"> Valor: </label>
+                        <input type="number" class="campo" id="val">
+                        <label class="formVig" style="margin-left: 75px;margin-right: 0px;"> Data da Venda: </label>
+                        <input type="date" class="campo" class="campo">
+                    </p>
+                    <p style="margin-left: 30px; margin-right: 30px; padding-left: 0px; padding-right: 0px;">
+                        <input type="checkbox"  class="checkbox">
+                        <label for="checkbox-1" style="padding-right: 40px;" > Passagens </label>
+                        <input type="checkbox"  class="checkbox">
+                        <label for="checkbox-1" style="padding-right: 40px;"> Documento </label>
+                        <input type="checkbox"  class="checkbox">
+                        <label for="checkbox-1" style="padding-right: 15px;"> Comissão </label>
+                        <input type="number" class="campo" style="width: 25px;" placeholder="%" id="com" onkeydown="calcula()"'>
+                        <label for="checkbox-1" style="padding-left: 20px;"> Valor Recebido: </label>
+                        <input type="number" class="campo" name="valReb">                        
+                        <label class="formVig" style="margin-right: 0px; margin-left:40px;"> Nº da Reserva: </label>
+                        <input type="number" class="campo" style="width: 90px;">
+                    </p>
+                    <p>
+                        <label class="formVig"> Feedback </label>
+                            <textarea rows="5" style="margin-top: 15px;"></textarea>
+                    </p>
+                    <p>
+                        <a href=""><button disabled class="vigFor" type="button" style="margin-left: 30px;"> Alterar </button></a><!–- alterar a cor -->
+                        <a href=""><button disabled class="vigFor" type="button"  > Excluir</button></a><!–- alterar a cor -->
+                        <a href=""><button class="vigFor" type="button"  > Salvar</button></a>
+                        <a href=""><button class="vigFor" type="button"  > Cancelar</button></a>
+                        <a href="../Viagem.html"><button class="vigFor" type="button" style="margin-right: 0px;" > Voltar</button></a> <!–- alterar a cor -->
+                    </p>
+                </form>
+            </nav>
+        </div>
+        <footer>
+            <p>
+                <img src="../css/logo/py_logo.png"  id="logoPy" >
+            </p>
+            
+        </footer>
+
+    </body>
+</html>
