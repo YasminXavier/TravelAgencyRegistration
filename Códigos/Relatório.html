@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/fundo.css">
+        <title> Viagens </title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <img class="logo" src="./css/logo/Longo.png" >
+        <a href="login.html"><button  id="logout"> Sair </button></a>
+        <div id="telas">
+            <header>
+                <nav id="menu">
+                    <ul>
+                        <a href="Viagem.html" id="vig"><li> Viagens </li></a>
+                        <a href="Clientes.html"><li> Clientes </li></a>
+                        <a href="Funcionario.html"><li> Funcionários </li></a>
+                        <a href="Calendario.html"><li> Calendário </li></a>
+                        <a href="Relatório.html"><li> Relatório </li></a>
+                        <a href="Pesquisa.html"><li> Pesquisa </li></a>
+                    </ul>
+                </nav>
+            </header>
+            <p>
+                <label class="formVig" > Início: </label>
+                <input type="date" id="emiss" class="campo" style="width: 130px;" data-min-date="today" >
+                <label class="formVig" > Final: </label>
+                <input type="date" id="emiss" class="campo" style="width: 130px;" data-min-date="today" >
+                <select class="seletor" style="margin-left: 30px; margin-right: 0px; width: 200px;">
+                    <option value=""> Informação </option>
+                    <option value=""> Financeiro </option>
+                    <option value=""> Viagens Vendidas </option>
+                    <option value=""> Aniversários </option>
+                    <option value=""> Embarques </option>
+                    <option value=""> Retornos </option>
+                </select>
+                <button class="vigFor" type="button"  style="float: right;"> Buscar </button></a>
+                <img src="./css/logo/Impressora.png" class="rel" style="margin-top: 15px;">
+                <img src="./css/logo/Salvar.png" class="rel" style="margin-top: 15px;">
+            </p>
+            
+        </div> 
+        <footer>
+            <p>
+                <img src="./css/logo/py_logo.png"  id="logoPy" >
+            </p>
+        </footer>
+    </body>
+</html>

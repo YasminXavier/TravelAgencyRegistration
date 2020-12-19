@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='./calendario/lib/main.css' rel='stylesheet' />
+        <link type="text/css" rel="stylesheet" href="css/fundo.css">
+        <script src='./calendario/lib/main.js'></script>
+        <script>
+    
+          document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+              initialView: 'dayGridMonth'
+            });
+            calendar.render();
+          });
+    
+        </script>
+    </head>
+    <body style="background: #ffffff;">
+        <div id='calendar'></div>
+    </body>
+</html>
